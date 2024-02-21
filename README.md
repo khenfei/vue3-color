@@ -1,54 +1,13 @@
 # vue3-color
 
-[![npm](https://img.shields.io/npm/v/@lk77/vue3-color.svg)](https://www.npmjs.com/package/@lk77/vue3-color)
-
 Color Pickers for Sketch, Photoshop, Chrome & more with Vue 3.
 
 This package bring Vue 3 support to original package : [vue-color](https://www.npmjs.com/package/vue-color)
 
-## [Live demo](https://lk77.github.io/vue3-color/)
+> Forked from [@lk77/vue3-color](https://github.com/lk77/vue3-color)
+
 
 ![intro](./src/assets/intro.png)
-
-## Installation
-
-### NPM
-```bash
-$ npm install @lk77/vue3-color
-```
-
-### CommonJS
-```js
-var Photoshop = require('@lk77/vue3-color/src/Photoshop.vue');
-
-Vue.createApp({
-  components: {
-    'Photoshop': Photoshop
-  }
-})
-```
-
-### ES6
-```js
-import { Photoshop } from '@lk77/vue3-color'
-
-Vue.createApp({
-  components: {
-    'photoshop-picker': Photoshop
-  }
-})
-```
-
-### Browser globals
-The `dist` folder contains `vue3-color.common.js` with all components exported in the <code>window.VueColor</code> object. These bundles are also available on NPM packages.
-
-```html
-<script src="path/to/vue3.js"></script>
-<script src="path/to/vue3-color.common.js"></script>
-<script>
-  var Photoshop = VueColor.Photoshop
-</script>
-```
 
 ## Local setup
 
@@ -81,13 +40,13 @@ var colors = { r: 255, g: 0, b: 0 }
 
 const app = Vue.createApp({
   components: {
-    'material-picker': material,
-    'compact-picker': compact,
-    'swatches-picker': swatches,
-    'slider-picker': slider,
-    'sketch-picker': sketch,
-    'chrome-picker': chrome,
-    'photoshop-picker': photoshop
+    'material-picker': Material,
+    'compact-picker': Compact,
+    'swatches-picker': Swatches,
+    'slider-picker': Slider,
+    'sketch-picker': Sketch,
+    'chrome-picker': Chrome,
+    'photoshop-picker': Photoshop
   },
   data () {
     return {
@@ -136,7 +95,3 @@ In some cases you can give the component a predefined set of colors with the pro
   ]"
 ></compact-picker>
 ```
-
-## License
-
-@lk77/vue3-color is licensed under [The MIT License](LICENSE).

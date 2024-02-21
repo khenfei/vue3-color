@@ -15,6 +15,8 @@ import Hue from './components/common/Hue.vue'
 import Saturation from './components/common/Saturation.vue'
 import ColorMixin from './mixin/color.js'
 
+import './assets/css/style.css'
+
 const version = pkg.version
 
 const VueColor = {
